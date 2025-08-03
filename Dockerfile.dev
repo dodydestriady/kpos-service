@@ -1,0 +1,11 @@
+FROM golang:1.24-alpine
+
+# Install git dan curl (dibutuhkan)
+RUN apk add --no-cache git curl
+
+# Instalasi Air
+RUN go install github.com/air-verse/air@latest
+
+WORKDIR /app
+
+CMD ["/go/bin/air"]
