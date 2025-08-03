@@ -4,7 +4,7 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-cmd = "go build -buildvcs=false -o main ."
+cmd = "go build -buildvcs=false -o main ./cmd"
 bin = "main"
 full_bin = "./main"
 include_ext = ["go"]
